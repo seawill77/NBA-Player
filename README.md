@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<img src="https://cdn.rawgit.com/detailyang/awesome-cheatsheet/master/awesome.svg" alt="awesome" width="120" align="right" >
 
-In the project directory, you can run:
+# Awesome Cheatsheet [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/detailyang/awesome-cheatsheet)
 
-### `npm start`
+![Branch master](https://img.shields.io/badge/branch-master-brightgreen.svg?style=flat-square)    [![Build Status](https://api.travis-ci.org/detailyang/awesome-cheatsheet.svg)](https://travis-ci.org/detailyang/awesome-cheatsheet)    [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/detailyang/awesome-cheatsheet/master/LICENSE)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Why Yarn
 
-### `npm test`
+### Yarn is Super Fast!!
+Yarn caches every package it downloads so it never needs to again. It also parallelizes operations to maximize resource utilization so install times are faster than ever.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Common NPM commands in Yarn
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+|NPM Command | Yarn Command| Description (_wherever necessary_)|
+|:---|:---|---|
+|npm install|yarn <br/> yarn install|Will install packages listed in the `package.json` file|
+|npm install `pkg-name` <br/> npm install --save `pkg-name`| yarn add `pkg-name`|By default Yarn adds the `pgk-name` to `package.json` and `yarn.lock` files|
+|npm install `pkg-name@1.0.0` | yarn add `pgk-name@1.0.0`|
+|npm install `pkg-name` --save-dev| yarn add `pkg-name` --dev|
+|npm install `pkg-name` --peer| yarn add `pkg-name`--peer|
+|npm install `pkg-name` --optional| yarn add --optional|
+|npm install -g `pkg-name`| yarn global add `pkg-name`| Careful, yarn add global `pkg-name` adds packages `global` and `pkg-name` locally! |
+|npm update | yarn upgrade| Note: It's called **upgrade** in yarn|
+|npm uninstall `pkg-name`| yarn remove `pkg-name`|
+|npm run `script-name`| yarn run `script-name`|
+|npm init | yarn init|
+|npm pack | yarn pack| Creates a compressed gzip archive of the package dependencies|
+|npm link | yarn link|
+|npm outdated | yarn outdated|
+|npm publish | yarn publish|
+|npm run | yarn run|
+|npm cache clean | yarn cache clean|
+|npm login | yarn login (and logout)|
+|npm test | yarn test|
+|npm install --production | yarn --production|
+|npm  --version | yarn version|
+|npm  info | yarn info|
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### New Commands in Yarn
+|Yarn Command | Description|
+|---|---|
+|yarn why `pkg-name` | Builds a dependency graph on why this package is being used|
+|yarn clean | Frees up space by removing unnecessary files and folders from dependencies|
+|yarn licenses ls | Inspect the licenses of your dependencies|
+|yarn licenses generate-disclaimer | Automatically create your license dependency disclaimer|
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## References
+https://yarnpkg.com/en/docs/
